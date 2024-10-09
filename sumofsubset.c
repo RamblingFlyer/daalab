@@ -50,10 +50,8 @@ int main()
     for (i = 1; i <= n; i++)
         sum += s[i];
 
-    if (sum < d || s[1] > d)
-        printf("No subset possible\n");
-    else
-        sumofsubset(0, 1, sum);
+    
+    sumofsubset(0, 1, sum);
 
     return 0;
 }
