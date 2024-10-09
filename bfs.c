@@ -51,14 +51,6 @@ int main()
 
     printf("Enter source vertex (0 to %d):\n", v - 1);
     scanf("%d", &n);
-
-    // Validate the source vertex input
-    if (n < 0 || n >= v)
-    {
-        printf("Invalid vertex. Please enter a vertex between 0 and %d.\n", v - 1);
-        return 1; // Exit the program with an error code
-    }
-
     // Perform BFS traversal starting from the source vertex
     printf("BFS starting from vertex %d:\n", n);
     bfs(adj, n, v);
