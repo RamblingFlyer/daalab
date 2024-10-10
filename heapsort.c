@@ -52,15 +52,6 @@ void heapsort(int arr[], int n)
     }
 }
 
-void printArray(int arr[], int n)
-{
-    for (int i = 0; i < n; i++)
-    {
-        printf("%d ", arr[i]);
-    }
-    printf("\n");
-}
-
 int main()
 {
     int arr[] = {9, 4, 3, 8, 10, 2, 5};
@@ -69,6 +60,10 @@ int main()
     heapsort(arr, n);
 
     printf("Sorted array is \n");
-    printArray(arr, n);
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
     return 0;
 }
